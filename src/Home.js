@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import BlogList from "./blogList";
 import useFetch from "./useFetch";
 
@@ -13,7 +12,7 @@ const Home = () => {
     <div className="home">
       {error && <div>{error}</div>}
       {isPending && <div>Loading...</div>}
-      {blogs && <BlogList blogs={blogs} title="Blog" />}
+      {blogs && <BlogList blogs={blogs} title="All Blogs!" />}
     </div>
   );
 };
